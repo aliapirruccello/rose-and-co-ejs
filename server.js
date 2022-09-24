@@ -59,7 +59,9 @@ app.use("/", mainRoutes);
 app.use("/post", postRoutes);
 app.use("/comment", commentRoutes)
 
+const PORT = process.env.PORT || 8000
+
 //Server Running
 app.listen(process.env.PORT, () => {
-  console.log("Server is running, you better catch it!");
+  console.log(`Server running on ${process.env.NODE_ENV} mode on PORT ${PORT}`)
 });
