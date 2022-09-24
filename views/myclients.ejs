@@ -1,0 +1,22 @@
+<%- include('partials/header') -%>
+
+<div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card-body">
+    <ul class="row list-unstyled">
+      <h2 class="card-title">My Client Formula Cards</h1>
+    <% for(var i=0; i<posts.length; i++) {%>
+      <li class="col-6 justify-content-between mt-5">
+        <a href="/post/<%= posts[i]._id%>">
+          <img class="img-fluid" src="<%= posts[i].image%>">
+        </a>
+      </li>
+    <% } %>
+    </ul>
+  </div>
+</div>
+
+    <div class="row justify-content-around mt-5">
+      <a class="btn btn-primary" href="/feed">Return to Feed</a>
+    </div>  
+
+<%- include('partials/footer') -%>
