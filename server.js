@@ -59,7 +59,7 @@ app.use("/", mainRoutes);
 app.use("/post", postRoutes);
 app.use("/comment", commentRoutes)
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 3000
 
 //Server Running
 app.listen(process.env.PORT, () => {
