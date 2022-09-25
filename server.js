@@ -62,7 +62,6 @@ app.use("/comment", commentRoutes)
 const PORT = process.env.PORT || 3000
 
 //Server Running
-app.listen(
-  PORT, 
-  console.log(`Server running on ${process.env.NODE_ENV} mode on PORT ${PORT}`)
-  )
+app.listen(process.env.PORT, () => {
+  console.log(`Server running on ${process.env.PORT} mode on PORT ${PORT}`);
+});
