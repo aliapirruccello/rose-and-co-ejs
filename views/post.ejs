@@ -1,20 +1,22 @@
 <%- include('partials/header') -%>
-<div class="card w-96 bg-base-100 shadow-xl">
+<body>
+  <div>
+<div class="card w-96 bg-base-100 shadow-xl clientcard">
   <div class="card-body">
         <div class="col-6">
-          <h2 class="card-title">Client Name</h2>
+          <p class="badge badge-outline"">Client Name</p>
           <h2><%= post.clientName %></h2>
         </div>
       <div class="col-3 mt-5">
-        <h2>Client Formula</h2>
+        <p class="badge badge-outline">Formula</p>
         <p><%= post.formula %></p>
       </div>
       <div class="col-3 mt-5">
-        <h3>Client Haircut Notes</h3>
+        <h2 class="badge badge-outline">Haircut Notes</h2>
         <p><%= post.haircutNotes %></p>
       </div>
       
-        <h1>Updated Formulas</h1>
+        <h2 class="badge badge-outline">Updated Formulas</h2>
         <ul>
           <% for(var i=0; i<comments.length; i++) {%>
             <li class="col-6 justify-content-between mt-5">
@@ -41,9 +43,11 @@
       </div>
     </figure>
     <div class="col-3 mt-5">
-      <h3>Spark Notes</h3>
+      <h2 class="badge badge-outline">Spark Notes</h2>
+      <br>
       <p><%= post.sparkNotes %></p>
     </div>
+  <br>
     <div class="card-actions justify-between">
       <div class="row justify-content-between">
         <form
@@ -79,6 +83,7 @@
           <%}%>
         
       </div>
+    
   
 
 
@@ -92,7 +97,7 @@
       </div>
     
         
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary submit">Submit</button>
       </form>
     </div>
     
@@ -110,8 +115,13 @@
     </div> -->
   
 
-
+  </div>
 </div>
+<div class="flex flex-col w-full border-opacity-50 clientcard">
+  
+ 
+</div>
+</body>
 
 <%- include('partials/footer') -%>
 
