@@ -6,19 +6,22 @@
 
    <div class="grid-container">  
     <% for(var i=0; i<posts.length; i++) {%>
-      <div class="card w-96 bg-base4-100 shadow-xl">
-        
+      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <div class="card-body">
+        <figure>
         <a href="/post/<%= posts[i]._id%>">
           <img src="<%= posts[i].image%>">
         </a>
-      
-      </p>
+      </figure>
+     
         <h2 class="card-title"><%= posts[i].clientName %></h2>
         <%= posts[i].formula %>
 
         <span class="badge badge-ghost badge-sm"><%= posts[i].haircutNotes %></span>
-      <td><%= posts[i].createdAt %></td>
-    
+        <div class="card-actions justify-end">
+      <p><%= posts[i].createdAt.toDateString() %></p>
+        </div>
+      </div>
     </div>
     <% } %>
   </div>
@@ -30,9 +33,9 @@
   <a class="btn btn-primary" href="/newclient">Add New Client</a>
   </div>
 
-<div class="row justify-content-around mt-5 feed">
+<!-- <div class="row justify-content-around mt-5 feed">
 <a class="btn btn-primary" href="/feed">Return to Salon Feed</a>
-</div>
+</div> -->
 
 
 

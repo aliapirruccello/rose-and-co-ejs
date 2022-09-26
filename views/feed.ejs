@@ -71,7 +71,7 @@
             <br>
             <span class="badge badge-ghost badge-sm"><%= posts[i].haircutNotes %></span>
           </td>
-          <td><%= posts[i].createdAt %></td>
+          <td><%= posts[i].createdAt.toDateString() %></td>
           <th>
             <a href="/post/<%= posts[i]._id%>">
             <button class="btn btn-ghost btn-xs"> 
@@ -190,12 +190,12 @@
 </section>
 
 <section>
-  <div>
+  <!-- <div>
     <a class="btn btn-primary feedtop" href="/myclients"> My Clients</a>
     </div>  
     <div class="row justify-content-around mt-5 feed">
       <a class="btn btn-primary" href="/newclient">Add New Client</a>
-      </div>
+      </div> -->
     
 </section>
 </body>
