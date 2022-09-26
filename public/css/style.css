@@ -29,10 +29,17 @@ body {
 
 .logout {
     margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.feedtop {
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .feed {
     margin-left: 50px;
+    margin-bottom: 80px;
 }
 
 
@@ -40,3 +47,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 } 
+
+.footer {
+    width: 100%;
+}

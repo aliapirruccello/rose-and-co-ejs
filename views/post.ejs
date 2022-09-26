@@ -13,14 +13,26 @@
         <h3>Client Haircut Notes</h3>
         <p><%= post.haircutNotes %></p>
       </div>
-      <ul>
+      
         <h1>Updated Formulas</h1>
-        <% for(var i=0; i<comments.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <%= comments[i].comment%>
-          </li>
-        <% } %>
-      </ul>
+        <ul>
+          <% for(var i=0; i<comments.length; i++) {%>
+            <li class="col-6 justify-content-between mt-5">
+              <!--Add user attribution-->
+              <span>Stylist: <%= comments[i].createdBy%> <%= comments[i].comment%> <br> <%= comments[i].createdAt%>
+              <!--If comment was created by current user, then show delete button-->
+              <br> <%if(comments[i].createdById == user.id){ %>
+                    <form
+                      action="/comment/deleteComment/<%=post._id%>/<%= comments[i]._id %>?_method=DELETE"
+                      method="POST"
+                      >
+                      <button type="submit" class="btn btn-outline-danger">Delete</button>
+                    </form>
+                    <%}%>
+            </li>
+          <% } %>
+        </ul>
+      
     <figure>
       <div class="mb-3">
         <a href="/post/<%= post._id%>">
@@ -48,13 +60,24 @@
         </div>
     <!-- </div>
     <div class="card-actions justify-end"> -->
-    <form
+    <!-- <form
           action="/post/deletePost/<%= post.id %>?_method=DELETE"
           method="POST"
           class="col-3"
         >
           <button class="btn btn-primary fa fa-trash" type="submit"></button>
-        </form>
+        </form> -->
+
+        <%if(post.user == user.id){ %>
+          <form
+            action="/post/deletePost/<%= post.id %>?_method=DELETE"
+            method="POST"
+            class="col-3"
+          >
+            <button class="btn btn-primary fa fa-trash" type="submit"></button>
+          </form>
+          <%}%>
+        
       </div>
   
 
@@ -71,7 +94,7 @@
         
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    
+    </div>
     
     <!-- <ul>
       <h1>Updated Formulas</h1>
@@ -85,7 +108,9 @@
       <a class="btn btn-primary" href="/profile">Return to Profile</a>
       <a class="btn btn-primary" href="/feed">Return to Feed</a>
     </div> -->
-  </div>
+  
+
+
 </div>
 
 <%- include('partials/footer') -%>
