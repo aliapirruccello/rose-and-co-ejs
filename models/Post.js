@@ -23,7 +23,7 @@ const PostSchema = new mongoose.Schema({
   },
   sparkNotes: {
     type: String,
-    required: true,
+    required: false,
   },
   likes: {
     type: Number,

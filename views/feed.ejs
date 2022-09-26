@@ -1,5 +1,9 @@
 <%- include('partials/header') -%>
-  <div class="container">
+</body>
+<div class="flex flex-col w-full border-opacity-50">
+  <div class="grid h-20 card bg-base-300 rounded-box place-items-center">Salon Clients</div>
+
+  <!-- <div class="container">
     <div class="row justify-content-center mt-5">
       <ul class="row list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
@@ -7,11 +11,212 @@
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid" src="<%= posts[i].image%>">
             </a>
+            <div class="col-6">
+              <h2 class="card-title"><%= posts[i].clientName %></h2>
+            </div>
           </li>
         <% } %>
         </ul>
     </div>
-  </div>  
+  </div>   -->
+</div>
+<section>
+  <div class="overflow-x-auto w-full">
+    <table class="table w-full">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th>
+            <label>
+              <!-- <input type="checkbox" class="checkbox" /> -->
+            </label>
+          </th>
+          <th>Name</th>
+          <th>Formula</th>
+          <th>Date of last visit</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- row 1 -->
+        <tr>
+          <th>
+            <!-- <label>
+              <input type="checkbox" class="checkbox" />
+            </label> -->
+          </th>
+          <td>
+            <div class="flex items-center space-x-3">
+              <div class="avatar">
+                <div class="mask mask-squircle w-12 h-12">
+                  <% for(var i=0; i<posts.length; i++) {%>
+                
+                      <a href="/post/<%= posts[i]._id%>">
+                        <img class="img-fluid" src="<%= posts[i].image%>">
+                      </a>
+                    
+                  
+                </div>
+              </div>
+              <div>
+                <div class="font-bold"><%= posts[i].clientName %></div>
+                <div class="text-sm opacity-50"><%= posts[i].userName %></div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <%= posts[i].formula %>
+            <br>
+            <span class="badge badge-ghost badge-sm"><%= posts[i].haircutNotes %></span>
+          </td>
+          <td><%= posts[i].createdAt %></td>
+          <th>
+            <a href="/post/<%= posts[i]._id%>">
+            <button class="btn btn-ghost btn-xs"> 
+                
 
+              client card</button>
+            </a>
+          </th>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+          <th>
+            <!-- <label>
+              <input type="checkbox" class="checkbox" />
+            </label> -->
+          </th>
+          <td>
+            <div class="flex items-center space-x-3">
+              <div class="avatar">
+                <div class="mask mask-squircle w-12 h-12">
+                  <% } %>
+                </div>
+              </div>
+              <div>
+                <div class="font-bold"></div>
+                <div class="text-sm opacity-50"></div>
+              </div>
+            </div>
+          </td>
+          <td>
+            
+            <br>
+            <span class="badge badge-ghost badge-sm"></span>
+          </td>
+          <td></td>
+          <th>
+            <button class="btn btn-ghost btn-xs"></button>
+          </th>
+        </th>
+        </tr>
+        <!-- row 3 -->
+        <!-- <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <td>
+            <div class="flex items-center space-x-3">
+              <div class="avatar">
+                <div class="mask mask-squircle w-12 h-12">
+                  <img src="/tailwind-css-component-profile-4@56w.png" alt="Avatar Tailwind CSS Component" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">Marjy Ferencz</div>
+                <div class="text-sm opacity-50">Russia</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            Rowe-Schoen
+            <br>
+            <span class="badge badge-ghost badge-sm">Office Assistant I</span>
+          </td>
+          <td>Crimson</td>
+          <th>
+            <button class="btn btn-ghost btn-xs">client card</button>
+          </th>
+        </tr> -->
+        <!-- row 4 -->
+        <!-- <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <td>
+            <div class="flex items-center space-x-3">
+              <div class="avatar">
+                <div class="mask mask-squircle w-12 h-12">
+                  <img src="/tailwind-css-component-profile-5@56w.png" alt="Avatar Tailwind CSS Component" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">Yancy Tear</div>
+                <div class="text-sm opacity-50">Brazil</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            Wyman-Ledner
+            <br>
+            <span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+          </td>
+          <td>Indigo</td>
+          <th>
+            <button class="btn btn-ghost btn-xs">details</button>
+          </th>
+        </tr> -->
+      </tbody>
+      <!-- foot -->
+      <!-- <tfoot>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Formula</th>
+          <th>Date of last Visit</th>
+          <th></th>
+        </tr>
+      </tfoot> -->
+      
+    </table>
+  </div>
+</div>
+</section>
 
-<%- include('partials/footer') -%>
+<section>
+  <div>
+    <a class="btn btn-primary" href="/myclients">Return to My Clients</a>
+    </div>  
+    <div class="row justify-content-around mt-5 feed">
+      <a class="btn btn-primary" href="/newclient">Add New Client</a>
+      </div>
+    
+</section>
+</body>
+
+<footer>
+  <div class="btm-nav">
+    <a href="/newclient">
+    <button class="text-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+    </button>
+  </a>
+  
+   <a href="/myclients"
+    button class="text-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    </button>
+  </a>
+   
+    <button class="text-primary active">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+    
+    </button>
+ 
+  </div>
+  </footer
