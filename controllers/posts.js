@@ -1,6 +1,7 @@
 const cloudinary = require("../middleware/cloudinary");
 const Post = require("../models/Post");
 const Comment = require("../models/Comment");
+const User = require("../models/User");
 
 module.exports = {
   getNewClient: async (req, res) => {
@@ -40,6 +41,7 @@ module.exports = {
     try {
       // Upload image to cloudinary
       const result = await cloudinary.uploader.upload(req.file.path);
+      const commentUser = await User.findById(req.user.id)
 
       await Post.create({
         clientName: req.body.clientName,
@@ -50,6 +52,8 @@ module.exports = {
         sparkNotes: req.body.sparkNotes,
         likes: 0,
         user: req.user.id,
+        createdBy: commentUser.userName,
+        createdById: req.user.id
       });
       console.log("Client has been added!");
       res.redirect("/myclients");
