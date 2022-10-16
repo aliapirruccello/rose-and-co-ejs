@@ -11,6 +11,8 @@ const connectDB = require("./config/database");
 const mainRoutes = require("./routes/main");
 const postRoutes = require("./routes/posts");
 const commentRoutes = require("./routes/comments");
+const { collection } = require("./models/Post");
+const { ObjectId } = require("mongodb");
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
@@ -57,7 +59,44 @@ app.use(flash());
 //Setup Routes For Which The Server Is Listening
 app.use("/", mainRoutes);
 app.use("/post", postRoutes);
-app.use("/comment", commentRoutes)
+app.use("/comment", commentRoutes);
+
+// //Setup Search capability from DB to find client 
+
+// app.get("/search", async (request, response) => {
+//   try {
+//     let result = await collection.aggregate([
+//       {
+//         "$Search" : {
+//           "autocomplete" : {
+//             "query": `${request.query.query}`,
+//             "path": "clientName",
+//             "fuzzy": {
+//               "maxEdits":2,
+//               "prefixLength": 3
+//             }
+//           }
+//         }
+//       }
+//     ]).toArray()
+//     response.send(result)
+//   } catch (error) {
+//     response.status(500).send({message: error.message})
+//   }
+// })
+
+//bring back data from the selection
+
+// app.get("/get/:id", async (request, response) => {
+//   try {
+//     let result = await collection.findOne({
+//       "_id" : ObjectId(request.params.id)
+//     })
+//     response.send(result)
+//   } catch (error){
+//     response.status(500).send({message: error.message})
+//   }
+// })
 
 const PORT = process.env.PORT || 3000
 
