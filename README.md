@@ -1,6 +1,7 @@
 # Full Stack App to store Client Informatin
 ## This is an app that I was inspired to build for my hair styling needs 
 
+![roseAndCoTwitter](https://user-images.githubusercontent.com/98843063/197878429-14109e48-04da-4453-9087-b636b069e96f.gif)
 
 
 
