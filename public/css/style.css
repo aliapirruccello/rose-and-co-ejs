@@ -1,9 +1,10 @@
 body {
-    background-color: rgb(41, 48, 59);
+    background-color: rgb(214, 187, 171);
 }
 
 .phone-1 {
     margin-left: 30px;
+    background-color: rgb(214, 187, 171);
 }
 
 .container {
@@ -12,6 +13,7 @@ body {
 
 .badge-outline {
     margin-left: 30px;
+
 }
 
 .text-neutral-content {
@@ -50,22 +52,13 @@ body {
 .grid-container {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 1rem;
 } 
 
-.footer {
-    width: 100%;
-}
-
-.clientcard {
+.client-card {
     margin-bottom: 50px;
-}
 
-.example {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 70px;
 }
-
 
 @media (max-width: 480px) {
 img.animated-gif{
@@ -73,4 +66,88 @@ img.animated-gif{
     height: auto;
     position:relative;
   }
+}
+
+img.animated-gif {
+    width: 400px;
+    
+}
+
+.gif-div {
+    text-align: center;
+} 
+
+.main-class {
+    background-color: rgb(214, 187, 171);
+    min-height: calc(100vh - 50px);
+   
+}
+
+.card-section {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: vertical;
+    justify-items: center;
+    align-items: center;
+
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+.salonView {
+    text-align: center;
+}
+
+.index-base-content {
+    height: 100px;
+    color: grey;
+    
+}
+
+.text-base-content {
+    color: grey;
+    height: 50px;
+    
+}
+
+.sign-up {
+    color: white;
+    font-size: 2rem;
+
+}
+
+.login {
+    color: white;
+    font-size: 2rem;
+
+}
+
+.add-new-client {
+    color: white;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.mb-3 {
+    color: white;
+}
+
+.memory {
+    color: rgb(6, 73, 6)
+}
+
+.login-button {
+    background-color: rgb(55, 112, 101);
+}
+
+.signup-button {
+    background-color: rgb(250, 147, 63);
+    color: white;
+}
+
+.main-peach {
+    margin-top: 20px;
 }

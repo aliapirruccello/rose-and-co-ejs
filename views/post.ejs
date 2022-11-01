@@ -1,7 +1,8 @@
 <%- include('partials/header') -%>
 <body>
-  <div>
-<div class="card w-96 bg-base-100 shadow-xl clientcard">
+  <div class="main-class">
+  <div class="card-section">
+<div class="card w-96 bg-base-100 shadow-xl client-card">
   <div class="card-body">
         <div class="col-6">
           <p class="badge badge-outline"">Client Name</p>
@@ -28,7 +29,7 @@
                       action="/comment/deleteComment/<%=post._id%>/<%= comments[i]._id %>?_method=DELETE"
                       method="POST"
                       >
-                      <button type="submit" class="btn btn-outline-danger">Delete</button>
+                      <button type="submit" class="btn btn-error">Delete</button>
                     </form>
                     <%}%>
             </li>
@@ -78,7 +79,7 @@
             method="POST"
             class="col-3"
           >
-            <button class="btn btn-primary fa fa-trash" type="submit"></button>
+            <button class="btn btn-error fa fa-trash" type="submit"></button>
           </form>
           <%}%>
         
@@ -92,7 +93,7 @@
       <form action="/comment/createComment/<%=post._id%>" method="POST">
         <div class="mb-3">
             <label for="formula" class="form-label"></label>
-            <input type="text" class="form-control input input-bordered input-error w-full max-w-xs" id="comment" name="comment" placeholder="New Formula">
+            <input type="text" class="form-control input input-bordered input-primary w-full max-w-xs" id="comment" name="comment" placeholder="Add New Formula Here">
         </div>
       </div>
     
@@ -116,6 +117,7 @@
   
 
   </div>
+</div>
 </div>
 <div class="flex flex-col w-full border-opacity-50 clientcard">
   
