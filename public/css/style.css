@@ -92,9 +92,10 @@ img.animated-gif {
 
 }
 
-img {
+.salonPic {
     margin: auto;
     display: block;
+    max-width: 600px;
 }
 
 .salonView {
@@ -102,14 +103,15 @@ img {
 }
 
 .index-base-content {
-    height: 100px;
+    height: 50px;
     color: grey;
     
 }
 
 .text-base-content {
     color: grey;
-    height: 50px;
+    margin-top: 20px;
+    height: 80px;
     
 }
 
@@ -135,9 +137,6 @@ img {
     color: white;
 }
 
-.memory {
-    color: rgb(6, 73, 6)
-}
 
 .login-button {
     background-color: rgb(55, 112, 101);
@@ -149,5 +148,14 @@ img {
 }
 
 .main-peach {
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.index-top-section {
+   margin-top: -50px;
+   margin-bottom: 40px;
+}
+
+.footer-index {
+    margin-top: 50px;
 }
