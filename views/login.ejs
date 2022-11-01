@@ -1,6 +1,7 @@
 <%- include('partials/header') -%>
+<div class="main-class">
 <div class="artboard phone-1">
-  <div class="badge badge-outline"> Login to your account</div>
+  <div class="login"> Login to your account</div>
 
 <main class="container">
   <div class="row justify-content-center">
@@ -19,7 +20,7 @@
           
           <input
             type="email"
-            class="form-control input input-bordered w-full max-w-xs"
+            class="input input-bordered input-lg w-full max-w-xs"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             name="email"
@@ -29,16 +30,22 @@
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input
             type="password"
-            class="form-control input input-bordered w-full max-w-xs"
+            class="input input-bordered input-lg w-full max-w-xs"
             id="exampleInputPassword1"
             name="password"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-outline btn-primary">Submit</button>
       </form>
     </section>
   </div>
 </div>
+</div>
   
 </main>
-<%- include('partials/footer') -%>
+
+<footer class="footer footer-center p-4 text-base-content">
+  <div>
+    <p>Copyright © 2022 - Alia Pirruccello</p>
+  </div>
+</footer>
