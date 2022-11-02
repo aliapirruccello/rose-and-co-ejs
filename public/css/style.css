@@ -151,11 +151,10 @@ img.animated-gif {
     margin-top: 40px;
 }
 
-.index-top-section {
-   margin-top: -50px;
-   margin-bottom: 40px;
-}
-
 .footer-index {
     margin-top: 50px;
+}
+
+.top-index {
+    margin-top: -70px;
 }
