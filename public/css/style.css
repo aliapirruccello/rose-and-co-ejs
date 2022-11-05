@@ -12,7 +12,8 @@ body {
 }
 
 .badge-outline {
-    margin-left: 30px;
+    margin-left: 10px;
+    margin-bottom: 15px;
 
 }
 
@@ -60,31 +61,28 @@ body {
 
 }
 
-@media (max-width: 480px) {
-img.animated-gif{
-    width: 380px;
-    height: auto;
-    position:relative;
-  }
-}
-
-img.animated-gif {
-    width: 400px;
-    
-}
-
-.gif-div {
-    text-align: center;
-} 
 
 .main-class {
     background-color: rgb(214, 187, 171);
-    min-height: calc(100vh - 50px);
+    /* min-height: calc(100vh - 50px); */
+    text-align: center;
+    margin-top: 30px;
    
+}
+
+.bottom-main {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.form {
+    background-color: rgb(214, 187, 171);
+    min-height: calc(100vh - 50px);
 }
 
 .card-section {
     margin-left: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: vertical;
     justify-items: center;
@@ -92,10 +90,9 @@ img.animated-gif {
 
 }
 
-.salonPic {
+img {
     margin: auto;
     display: block;
-    max-width: 600px;
 }
 
 .salonView {
@@ -103,15 +100,8 @@ img.animated-gif {
 }
 
 .index-base-content {
-    height: 50px;
+    height: 100px;
     color: grey;
-    
-}
-
-.text-base-content {
-    color: grey;
-    margin-top: 20px;
-    height: 80px;
     
 }
 
@@ -133,28 +123,43 @@ img.animated-gif {
     margin-left: 2rem;
 }
 
-.mb-3 {
-    color: white;
-}
-
-
-.login-button {
-    background-color: rgb(55, 112, 101);
-}
-
-.signup-button {
-    background-color: rgb(250, 147, 63);
-    color: white;
-}
-
-.main-peach {
-    margin-top: 40px;
-}
-
-.footer-index {
+.index-footer-content {
     margin-top: 50px;
 }
 
-.top-index {
-    margin-top: -70px;
+.header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(201, 171, 163);
+    /* opacity: .1; */
+    padding: 30px 0;
+    transition: 0.3s;
+    height: 100px;
+
 }
+
+.footer {
+    position: relative;
+    padding: 30px 0;
+    width: 100%;
+    background-color: rgb(201, 171, 163);
+    /* opacity: .1; */
+    color: black;
+    z-index: 999;
+    height: 70px;
+    
+}
+
+.footer-text {
+    position: relative;
+    z-index: 1;
+}
+
+.signin-btn {
+    margin: 30px 30px 30px 0px;
+}
+
+
