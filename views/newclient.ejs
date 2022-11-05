@@ -3,7 +3,7 @@
 <!-- <div class="flex flex-col w-full border-opacity-50">
   <div class="grid flex-grow h-32 card bg-orange-100 rounded-box place-items-center">Add New Client Formula</div> -->
 
-<div class="main-class">
+<div class="form">
   <div class="row mt-5">
       <div class="col-6">
         <div class="add-new-client">Add New Client</div>
@@ -14,15 +14,15 @@
             <form class="profileform" action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
                   <label for="clientName" class="form-label">Client Name</label>
-                  <input type="text" class="form-control input input-bordered input-primary w-full max-w-xs" id="clientName" name="clientName">
+                  <input type="text" class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="clientName" name="clientName">
               </div>
               <div class="mb-3">
                 <label for="formula" class="form-label">Formula</label>
-                <textarea class="form-control input input-bordered input-primary w-full max-w-xs" id="formula" name="formula"></textarea>
+                <textarea class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="formula" name="formula"></textarea>
               </div>
               <div class="mb-3">
                 <label for="haircutNotes" class="form-label">Hair Cut Details</label>
-                <textarea class="form-control input input-bordered input-primary w-full max-w-xs" id="haircutNotes" name="haircutNotes"></textarea>
+                <textarea class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="haircutNotes" name="haircutNotes"></textarea>
               </div>
               <div class="mb-3">
                 <label for="imgUpload" class="form-label">Image</label>
@@ -30,7 +30,7 @@
               </div>
               <div class="mb-3">
                 <label for="sparkNotes" class="form-label">Client Spark Notes</label>
-                <textarea class="form-control input input-bordered input-primary w-full max-w-xs" id="sparkNotes" name="sparkNotes"></textarea>
+                <textarea class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="sparkNotes" name="sparkNotes"></textarea>
               </div>
               <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
             </form>
