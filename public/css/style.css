@@ -1,14 +1,51 @@
-body {
-    background-color: rgb(214, 187, 171);
+/* @import url(fontawesome-all.min.css);
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400'; */
+
+
+body { 
+    background-color:rgb(221, 191, 176);
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  
+}
+#body {
+    padding: 10px;
+    padding-bottom: 60px;
 }
 
-.phone-1 {
-    margin-left: 30px;
-    background-color: rgb(214, 187, 171);
+#login {
+    background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1668522844/hair-salon-design-ideas_oygvdj.webp');
+    background-size: cover; 
+    height:560px; 
+    padding-bottom: 50px;
+
 }
 
-.container {
-    margin-left: 30px;
+#signup {
+    background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1668522844/hair-salon-design-ideas_oygvdj.webp');
+    background-size:cover; 
+    height:560px; 
+
+}
+
+/* #new-client {
+    background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1667258286/hair-salon_mrmfc2.jpg');
+    background-size:cover; 
+    height:560px; 
+
+} */
+
+.bottom-login {
+    background-color:rgb(221, 191, 176);
+    height:600px;
+    margin-top: -900px;
+}
+
+.bottom-signup {
+    background-color:rgb(221, 191, 176);
+    height:600px;
+    margin-top: -400px;
 }
 
 .badge-outline {
@@ -24,9 +61,108 @@ body {
    
  }
 
- .shadow-xl {
-    margin-left: 3px;
+ .mac-myclient-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    min-width: max-content;
+ }
+
+ .index-mysalon-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(221, 191, 176);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-bottom: -150px;
+    margin-top: 20px;
+    
+ }
+
+ .mac-mysalon-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(221, 191, 176);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    min-width: max-content;
+ }
+
+ .card-salon-preview {
+    background-color: rgb(239, 223, 216);
+    width: 600px;
+ }
+
+ #mac-my-clients {
+
+ }
+
+ #mac-salon-clients {
+
+ }
+ /* .shadow-xl {
+    margin-top: 30px;
+    padding-top:15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color:rgb(221, 191, 176);
+ } */
+
+ .new-client-card {
+    margin-top: 30px;
+    padding-top:15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color:rgb(239, 223, 216);
+ }
+
+ .sign-in-card {
+    margin-top: 30px;
+    padding-top:15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color:rgb(221, 191, 176);
+ }
+
+ .sign-up-card {
+    margin-top: 30px;
+    padding-top:15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color:rgb(221, 191, 176);
+ }
+
+ .animated-gif {
+    max-height: 500px;
+    max-width: 700px;
+    background-color: rgb(221, 191, 176);
+    position: relative; 
+    top: 0; 
+    left: 0; 
+
+ }
+
+ iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .shadow-xl-client-card {
+    max-height: 460px;
+    min-height: 460px;
+    margin: 20px;
  }
 
 
@@ -35,8 +171,8 @@ body {
  }
 
 .logout {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin: 150px;
+   
 }
 
 .feedtop {
@@ -53,32 +189,47 @@ body {
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+
 } 
 
-.client-card {
-    margin-bottom: 50px;
+.client-card-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 20px;
 
 }
 
 
 .main-class {
-    background-color: rgb(214, 187, 171);
+    /* background-color: rgb(214, 187, 171); */
     /* min-height: calc(100vh - 50px); */
     text-align: center;
-    margin-top: 30px;
+    /* margin-top: 90px; */
+    padding-top:20px;
+    margin-bottom: 150px;
+
    
 }
 
-.bottom-main {
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-
-.form {
-    background-color: rgb(214, 187, 171);
+.new-client-main {
     min-height: calc(100vh - 50px);
 }
+
+.bottom-main {
+    background-color: rgb(221, 191, 176);
+    padding-bottom: 100px;
+    padding-top: 20px;
+    margin-top: -40px;
+}
+
+/* .form {
+    background-color: rgb(214, 187, 171);
+    min-height: calc(100vh - 50px);
+} */
 
 .card-section {
     margin-left: 20px;
@@ -93,73 +244,276 @@ body {
 img {
     margin: auto;
     display: block;
+    max-height: 300px;
 }
+
 
 .salonView {
     text-align: center;
 }
 
-.index-base-content {
-    height: 100px;
-    color: grey;
-    
-}
 
 .sign-up {
-    color: white;
     font-size: 2rem;
 
 }
 
 .login {
-    color: white;
     font-size: 2rem;
 
 }
 
 .add-new-client {
-    color: white;
-    font-size: 2rem;
-    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.index-footer-content {
-    margin-top: 50px;
+.my-clients {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
 }
+
+.my-clients-login {
+    font-size: 2rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 750px;
+
+}
+
+.my-clients-signup {
+    font-size: 2rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.salon-clients-feed {
+    margin-top: 10px;
+}
+
 
 .header {
-    position: relative;
+    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
     z-index: 999;
-    background-color: rgb(201, 171, 163);
-    /* opacity: .1; */
-    padding: 30px 0;
-    transition: 0.3s;
-    height: 100px;
+    background-color: rgb(239, 223, 216);
+    /* opacity: .5; */
+    padding: 10 0 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-signin {
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    /* opacity: .5; */
+    padding: 10 0 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .footer {
-    position: relative;
-    padding: 30px 0;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    background-color: rgb(201, 171, 163);
-    /* opacity: .1; */
-    color: black;
-    z-index: 999;
-    height: 70px;
+    /* width: 100%; */
+    background-color: rgb(42, 19, 51);
+    /* margin-bottom: 60px;  */
+    clear: both;
+    position: relative;
+    height: 60px;
     
 }
 
-.footer-text {
-    position: relative;
-    z-index: 1;
+.add-new-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+
 
 .signin-btn {
     margin: 30px 30px 30px 0px;
 }
 
+/* Icon */
+
+.icon {
+    text-decoration: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-bottom: none;
+    position: relative;
+}
+
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        text-transform: none !important;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+    }
+
+    .icon > .label {
+        display: none;
+    }
+
+    .icon:before {
+        line-height: solid;
+    }
+
+    .icon.solid:before {
+        font-weight: 900;
+    }
+
+    .icon.brands:before {
+        font-family: 'Font Awesome 5 Brands';
+    }
+
+    .icon.major {
+        border: solid 1px;
+        display: inline-block;
+        border-radius: 100%;
+        padding: 0.65em;
+        margin: 0 0 2em 0;
+        cursor: default;
+    }
+
+        .icon.major:before {
+            display: inline-block;
+            font-size: 6.25rem;
+            width: 2.25em;
+            height: 2.25em;
+            line-height: 2.2em;
+            border-radius: 100%;
+            border: solid 1px;
+            text-align: center;
+        }
+
+    .icon.alt {
+        display: inline-block;
+        border: solid 1px;
+        border-radius: 100%;
+    }
+
+        .icon.alt:before {
+            display: block;
+            font-size: 1.25em;
+            width: 2em;
+            height: 2em;
+            text-align: center;
+            line-height: 2em;
+        }
+
+    .icon.style1 {
+        color: #efa8b0;
+    }
+
+    .icon.style2 {
+        color: #c79cc8;
+    }
+
+    .icon.style3 {
+        color: #a89cc8;
+    }
+
+    .icon.style4 {
+        color: #9bb2e1;
+    }
+
+    .icon.style5 {
+        color: #8cc9f0;
+    }
+
+    @media screen and (max-width: 1680px) {
+
+        .icon.major:before {
+            font-size: 5.5rem;
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        .icon.major:before {
+            font-size: 4.75rem;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .icon.major {
+            margin: 0 0 1.5em 0;
+            padding: 0.35em;
+        }
+
+            .icon.major:before {
+                font-size: 3.5rem;
+            }
+
+    }
+
+.icon.major {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+    .icon.major:before {
+        border-color: rgba(255, 255, 255, 0.35);
+    }
+
+.icon.alt {
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+}
+
+    .icon.alt:hover {
+        background-color: rgba(255, 255, 255, 0.075);
+    }
+
+    .icon.alt:active {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+
+
+#horizontal-list {
+
+    list-style: none;
+    padding-bottom: 20px;
+    margin-top: -20px;
+}
+
+ul#horizontal-list li {
+    display: inline;
+}
 

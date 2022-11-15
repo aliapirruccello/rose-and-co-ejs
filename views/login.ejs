@@ -1,7 +1,44 @@
-<%- include('partials/header') -%>
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rose+Co</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://res.cloudinary.com/aliapurplejello/image/upload/v1667323919/rose-and-co-light_vjskbs.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script> 
+<body id="login">
+
+  <header class="header-signin">
+    <nav>
+  <div class="navbar">
+    <div class="flex-1">
+      <a href="/" class="btn btn-ghost normal-case text-xl">Rose+Co</a>
+    </div>
+  </nav>
+</header>
+<!-- <div style="background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1667258286/hair-salon_mrmfc2.jpg'); 
+background-size: cover; height:560px; padding-top:80px;">
+</div> -->
+<div class="my-clients-login">
 <div class="form">
-<div class="artboard phone-1">
-  <div class="login"> Login to your account</div>
+
+  <div class="card card-compact w-96 shadow-xl sign-in-card">
+  <div class="login">Sign in to your account</div>
 
 <main class="container">
   <div class="row justify-content-center">
@@ -14,7 +51,7 @@
       <% }) %> <% } %>
       <form action="/login" method="POST">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
+          <label for="exampleInputEmail1" class="form-label text-xl"
             >Email address</label
           >
           
@@ -27,7 +64,7 @@
           />
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <label for="exampleInputPassword1" class="form-label text-xl">Password</label>
           <input
             type="password"
             class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl"
@@ -41,11 +78,23 @@
   </div>
 </div>
 </div>
+</div>
+</div>
   
 </main>
+<div class="bottom-login">
+</div>
 
-<footer class="footer footer-center p-4 text-base-content">
+<footer class="footer footer-center p-4 index-footer-content text-white">
+
   <div>
     <p>Copyright © 2022 - Alia Pirruccello</p>
   </div>
+  <!-- <div>
+    <ul id="horizontal-list">
+    <li><a href="https://twitter.com/apirruccello" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                      <li><a href="https://www.linkedin.com/in/alia-pirruccello/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+                      <li><a href="https://github.com/aliapirruccello" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+  </ul>
+  </div> -->
 </footer>

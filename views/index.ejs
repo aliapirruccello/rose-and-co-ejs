@@ -21,105 +21,162 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script> 
-<body>
+<body id="login">
 
-  <header class="header">
-  </header>
+  <header>
+    <nav>
+  <div class="navbar">
+    <div class="flex-1">
+      <!-- <a href="/" class="btn btn-ghost normal-case text-xl text-white">Rose+Co</a> -->
+      <!-- <img href="https://res.cloudinary.com/aliapurplejello/image/upload/v1667323919/rose-and-co-light_vjskbs.png"> -->
+    </div>
+  </nav>
+</header>
+<div>
 
+  <!-- <div style="background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1667258286/hair-salon_mrmfc2.jpg'); 
+  background-size: cover; height:580px; padding-top:80px;">
+  </div> -->
 <section class="main-class">
   <div>
-    <h1 class="text-6xl text-indigo-100">Rose+Co</h1>
-    <h1 class="text-5xl text-orange-200">The Hairstylist's Memory Bank</h1>
+    <h1 class="text-6xl">Rose+Co</h1>
+    <h1 class="text-5xl ">The Hair Stylist's Memory Bank</h1>
   </div>
   <div>
-    <h3 class="text-xl">Track your client formulas, haircut details, information, and hair pictures all in one place.</h3>
+    
   </div>
   <div>
     <a href="/login" alt="login" class="btn btn-primary signin-btn text-lg text-white">Sign In</a>
-    <a href="/signup" alt="signup" class="btn create-btn bg-orange-200 border-opacity-10 text-white">New Account</a>
+    <a href="/signup" alt="signup" class="btn create-btn border-opacity-10 text-white">New Account</a>
   </div>
+  <!-- <div>
+    <a href="/auth/google" class="btn-lg">Log In With Google</a>
+  </div> -->
 </section>
 
 
 
 <section class="main-class">
-  <div>
-    <div class="salonView">
-      <img class="salonPic" src="https://res.cloudinary.com/aliapurplejello/image/upload/v1667258286/hair-salon_mrmfc2.jpg" alt="salonPicture">
-    </div>
-  </div>
-</section>
+
+
+
     
 <div class="bottom-main">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center ">
-      <h2 class="text-lg font-semibold">Rose+Co</h2>
+      
       <p class="mt-2 text-3xl leading-8 tracking-tight text-indigo-100 text-4xl">An easy way to keep track of your clients</p>
-      <p class="mt-4 max-w-2xl text-xl lg:mx-auto">Track your client formulas, haircuts, information, and pictures all in one place.</p>
+      <p class="mt-4 max-w-2xl text-xl lg:mx-auto">Track your client formulas, haircuts, spark notes, and pictures all in one place.</p>
     </div>
 
     <div class="mt-10">
       <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
-        <div class="relative">
-          <dt>
-            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-orange-200 text-white">
-              <!-- Heroicon name: outline/globe-alt -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-              </svg>
-            </div>
-            <p class="ml-16 text-lg font-medium leading-6 text-indigo-100">Save your whole salon time and energy</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base ">Client formula cards are available for your salon to see including pictures, formulas, haircut details, and spark notes.</dd>
-        </div>
 
         <div class="relative">
           <dt>
-            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-orange-200 text-white">
-              <!-- Heroicon name: outline/scale -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
-              </svg>
-            </div>
-            <p class="ml-16 text-lg font-medium leading-6 text-indigo-100">Cut your color mixing time in half</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base ">Stop spending precious time looking for your client's formula.</dd>
-        </div>
-
-        <div class="relative">
-          <dt>
-            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-orange-200 text-white">
+            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
               <!-- Heroicon name: outline/bolt -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>
             </div>
-            <p class="ml-16 text-lg font-medium leading-6 text-indigo-100">Formulas at your fingertips</p>
+            <p class="ml-16 text-2xl font-medium leading-6 text-indigo-100">Formulas at your fingertips</p>
           </dt>
-          <dd class="mt-2 ml-16 text-base "> Add new formulas as your client's hair color desires change. Ability to see previous color formulas and haircut history all in one place.</dd>
+          <dd class="mt-2 ml-16 text-base "> Add new formulas as your client's hair color desires change. Ability to see previous color formulas and haircut history.</dd>
         </div>
 
         <div class="relative">
           <dt>
-            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-orange-200 text-white">
+            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
+              <!-- Heroicon name: outline/scale -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
+              </svg>
+            </div>
+            <p class="ml-16 text-2xl font-medium leading-6 text-indigo-100">Cut your color mixing time in half</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base ">Stop spending precious time looking for your client's formula.</dd>
+        </div>
+
+
+
+        <div class="relative">
+          <dt>
+            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
               <!-- Heroicon name: outline/chat-bubble-bottom-center-text -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
               </svg>
             </div>
-            <p class="ml-16 text-lg font-medium leading-6 text-indigo-100">Say goodbye to asking another stylist for their client's formula</p>
+            <p class="ml-16 text-2xl font-medium leading-6 text-indigo-100">No more asking another stylist for their client's formula</p>
           </dt>
           <dd class="mt-2 ml-16 text-base">Fitting in another stylist's client? Now you can see their formula from the salon database in your Rose+Co app.</dd>
+        </div>
+        <div class="relative">
+          <dt>
+            <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
+              <!-- Heroicon name: outline/globe-alt -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+              </svg>
+            </div>
+            <p class="ml-16 text-2xl font-medium leading-6 text-indigo-100">Save time and energy</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base ">Client formula cards are available for your salon to see including pictures, formulas, haircut details, and spark notes.</dd>
         </div>
       </dl>
     </div>
   </div>
 </div>
+  <!-- <div style="position: relative; padding-bottom: 43.75%; height: 0;" class="loom-iframe"><iframe src="https://res.cloudinary.com/aliapurplejello/video/upload/v1668549696/loom-rose-co_yl72hb.mp4" frameborder="0"></iframe></div> -->
+
+ <div class="mac-myclient-preview">
+  <div>
+<img id="mac-my-clients" src="https://res.cloudinary.com/aliapurplejello/image/upload/v1668710928/salon-my-clients-preview_nhu1if.png" alt="picture of all of hair stylist's client cards">
+ </div>
+<div>
+ <div class="index-myclient-preview">
+  <div class="card w-96 bg-base100 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title">My Clients</h2>
+      <h2>On this page, you can find all of your client cards in one place for a quick lookup of their formula. Clicking on their card will pull up a more detailed view that includes any updated formulas with dates of previous visits and spark notes.</h2>
+      <div class="card-actions justify-end">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+<div class="index-mysalon-preview">
+  <div class="card w-96 bg-base100 shadow-xl card-salon-preview">
+  <div class="card-body">
+  <h2 class="card-title">Salon Clients</h2>
+  <p>Here you will find a list of every client that is in the salon's database. Quickly look up formula and hair cut details. Can see who the client's regular hair stylist is. Clicking on their picture will pull up their full client card with every detail.
+</div>
+</div>
+
+<div class="mac-mysalon-preview">
+<img id="mac-salon-clients" src="https://res.cloudinary.com/aliapurplejello/image/upload/v1668710918/salon-client-preview_ei5jee.png" alt="picture of all of the salon's clients">
+</div>
+  
+    </div>
+  </div>
+</div>
+</div>
 
   </body>
 
-  <footer class="footer footer-center p-4 index-footer-content">
+  <footer class="footer footer-center p-4 index-footer-content text-white">
+
     <div>
       <p>Copyright © 2022 - Alia Pirruccello</p>
     </div>
+    <!-- <div>
+      <ul id="horizontal-list">
+      <li><a href="https://twitter.com/apirruccello" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.linkedin.com/in/alia-pirruccello/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://github.com/aliapirruccello" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+    </ul>
+    </div> -->
   </footer>
