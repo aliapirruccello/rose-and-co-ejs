@@ -23,6 +23,13 @@ require("./config/passport")(passport);
 //Connect To Database
 connectDB();
 
+//OAuth authentications routes
+app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email', 'https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/spreadsheets.readonly'], accessType: 'offline', prompt: 'consent' }));
+app.get('/auth/google/callback', passport.authenticate( 'google', {
+  successRedirect: '/myclients',
+  failureRedirect: '/authgoogle/failure'
+}));
+
 //Using EJS for views
 app.set("view engine", "ejs");
 
@@ -97,6 +104,12 @@ app.use("/comment", commentRoutes);
 //     response.status(500).send({message: error.message})
 //   }
 // })
+
+//SET GLOBAL VARIABLE
+app.use(function(req, res, next){
+  res.locals.user = req.user || null
+  next()
+})
 
 const PORT = process.env.PORT || 3000
 

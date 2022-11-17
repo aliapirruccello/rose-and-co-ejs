@@ -1,17 +1,17 @@
 <%- include('partials/header') -%>
-<div class="form">
-<div class="flex flex-col w-full border-opacity-50">
-  <!-- <div class="grid h-20 card bg-base-300 rounded-box place-items-center">My Client Formula Cards</div>
-</div> -->
-<div class="add-new-client">My Clients</div>
+<div class="new-client-main">
+  <div class="flex flex-col w-full border-opacity-50">
+  <!-- <div class="grid h-20 card bg-base-300 rounded-box place-items-center">My Client Formula Cards</div> -->
+  </div>
+  <div class="my-clients text-2xl"></div>
 
    <div class="grid-container">  
     <% for(var i=0; i<posts.length; i++) {%>
-      <div class="card card-compact w-96 bg-base-100 shadow-xl">
+      <div class="card card-compact w-96 bg-base-100 shadow-xl-client-card">
         <div class="card-body">
         <figure>
         <a href="/post/<%= posts[i]._id%>">
-          <img src="<%= posts[i].image%>">
+          <img src="<%= posts[i].image%>" alt="picture of client">
         </a>
       </figure>
      
@@ -30,7 +30,7 @@
 
 
 
-<div class="row justify-content-around mt-5 feed">
+  <div class="row justify-content-around mt-5 feed add-new-button">
   <a class="btn btn-primary" href="/newclient">Add New Client</a>
   </div>
 

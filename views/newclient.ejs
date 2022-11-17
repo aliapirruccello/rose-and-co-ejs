@@ -1,44 +1,44 @@
 <%- include('partials/header') -%>
-<body>
+<body id="new-client">
 <!-- <div class="flex flex-col w-full border-opacity-50">
   <div class="grid flex-grow h-32 card bg-orange-100 rounded-box place-items-center">Add New Client Formula</div> -->
-
+<div class="my-clients">
 <div class="form">
   <div class="row mt-5">
       <div class="col-6">
-        <div class="add-new-client">Add New Client</div>
+        <div class="add-new-client text-3xl"></div>
         
           
           <div class="mt-5">
-            
+            <div class="card card-compact w-96 shadow-xl new-client-card">
             <form class="profileform" action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
-                  <label for="clientName" class="form-label">Client Name</label>
+                  <label for="clientName" class="form-label text-xl">New Client Name</label>
                   <input type="text" class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="clientName" name="clientName">
               </div>
               <div class="mb-3">
-                <label for="formula" class="form-label">Formula</label>
+                <label for="formula" class="form-label text-xl">Formula</label>
                 <textarea class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="formula" name="formula"></textarea>
               </div>
               <div class="mb-3">
-                <label for="haircutNotes" class="form-label">Hair Cut Details</label>
+                <label for="haircutNotes" class="form-label text-xl">Hair Cut Details</label>
                 <textarea class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="haircutNotes" name="haircutNotes"></textarea>
               </div>
               <div class="mb-3">
-                <label for="imgUpload" class="form-label">Image</label>
+                <label for="imgUpload" class="form-label text-xl">Image</label>
                 <input type="file" class="form-control" id="imageUpload" name="file">
               </div>
               <div class="mb-3">
-                <label for="sparkNotes" class="form-label">Client Spark Notes</label>
+                <label for="sparkNotes" class="form-label text-xl">Client Spark Notes</label>
                 <textarea class="form-control input input-bordered input-primary input-lg w-full max-w-xs text-black text-xl" id="sparkNotes" name="sparkNotes"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+              <button type="submit" class="btn btn-primary text-xl" value="Upload">Submit</button>
             </form>
           </div>
-        
+        </div>
       </div>
     </div>
-    
+  </div>
   </div>
   <div class="logout">
     <p><strong>User Name</strong>: <%= user.userName %></p>
@@ -48,11 +48,18 @@
 <br>
 </body>
 
+</div>
 
+<footer class="footer footer-center p-4 index-footer-content text-white">
 
-<footer class="footer footer-center p-4 text-base-content">
   <div>
     <p>Copyright © 2022 - Alia Pirruccello</p>
   </div>
-</footer>    
-  
+  <!-- <div>
+    <ul id="horizontal-list">
+    <li><a href="https://twitter.com/apirruccello" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                      <li><a href="https://www.linkedin.com/in/alia-pirruccello/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+                      <li><a href="https://github.com/aliapirruccello" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+  </ul>
+  </div> -->
+</footer>
