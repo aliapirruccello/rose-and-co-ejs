@@ -25,7 +25,9 @@ body {
 #signup {
     background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1668522844/hair-salon-design-ideas_oygvdj.webp');
     background-size:cover; 
-    height:560px; 
+    height:560px;
+    /* background-size: 1500px; */
+   
 
 }
 
@@ -35,18 +37,6 @@ body {
     height:560px; 
 
 } */
-
-.bottom-login {
-    background-color:rgb(221, 191, 176);
-    height:600px;
-    margin-top: -900px;
-}
-
-.bottom-signup {
-    background-color:rgb(221, 191, 176);
-    height:600px;
-    margin-top: -400px;
-}
 
 .badge-outline {
     margin-left: 10px;
@@ -100,20 +90,6 @@ body {
     width: 600px;
  }
 
- #mac-my-clients {
-
- }
-
- #mac-salon-clients {
-
- }
- /* .shadow-xl {
-    margin-top: 30px;
-    padding-top:15px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    background-color:rgb(221, 191, 176);
- } */
 
  .new-client-card {
     margin-top: 30px;
@@ -149,15 +125,6 @@ body {
 
  }
 
- iframe {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
- }
 
  .shadow-xl-client-card {
     max-height: 460px;
@@ -180,6 +147,14 @@ body {
     align-items: center;
     justify-content: center;
    
+}
+
+#screenshare {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feedtop {
@@ -229,7 +204,7 @@ body {
     background-color: rgb(221, 191, 176);
     padding-bottom: 100px;
     padding-top: 20px;
-    margin-top: -40px;
+    margin-top: 60px;
 }
 
 /* .form {
@@ -291,7 +266,21 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 750px;
+
+}
+
+.bottom-login {
+    background-color:rgb(221, 191, 176);
+    height:650px;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom:100px;
+}
+
+.bottom-signup {
+    background-color:rgb(221, 191, 176);
+    height:650px;
+    margin-top: -250px;
 
 }
 
