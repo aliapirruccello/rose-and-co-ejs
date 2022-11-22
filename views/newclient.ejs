@@ -40,10 +40,18 @@
     </div>
   </div>
   </div>
-  <div class="logout">
-    <p><strong>User Name</strong>: <%= user.userName %></p>
-    <p><strong>Email</strong>: <%= user.email %></p>
+  <div id="logout">
+  <div class="card w-96 bg-base100 shadow-xl">
+  <div>
+    <div class="card-body">
+      <h2 class="card-title">You are currently logged in as</h2>
+      <h2><strong>User Name:</strong> <%= user.userName %></h2>
+      <h2><strong>Email</strong>: <%= user.email %></h2>
+      <div class="card-actions justify-end">
     <a href="/logout" class="col-3 btn btn-error">Logout</a>
+</div>
+</div>
+</div>
 </div>
 <br>
 </body>
