@@ -5,8 +5,8 @@
 <div class="card w-96 bg-base-100 shadow-xl">
   <div class="card-body">
         <div class="col-6">
-          <p class="badge badge-outline">Client Name</p>
-          <h2><%= post.clientName %></h2>
+          <h2 class="badge badge-outline">Client Name</h2>
+          <h2>     <%= post.clientName %></h2>
         </div>
       <div class="col-3 mt-5">
         <p class="badge badge-outline">Formula</p>
@@ -17,24 +17,7 @@
         <p><%= post.haircutNotes %></p>
       </div>
       
-        <h2 class="badge badge-outline">Updated Formulas</h2>
-        <ul>
-          <% for(var i=0; i<comments.length; i++) {%>
-            <li class="col-6 justify-content-between mt-5">
-              <!--Add user attribution-->
-              <span>Stylist <%= comments[i].createdBy%>: <%= comments[i].comment%> <br> <%= comments[i].createdAt.toDateString() %>
-              <!--If comment was created by current user, then show delete button-->
-              <br> <%if(comments[i].createdById == user.id){ %>
-                    <form
-                      action="/comment/deleteComment/<%=post._id%>/<%= comments[i]._id %>?_method=DELETE"
-                      method="POST"
-                      >
-                      <button type="submit" class="btn btn-error">Delete</button>
-                    </form>
-                    <%}%>
-            </li>
-          <% } %>
-        </ul>
+
       
     <figure>
       <div class="mb-3">
@@ -43,6 +26,26 @@
       </a>
       </div>
     </figure>
+
+    <h2 class="badge badge-outline">Updated Formulas</h2>
+    <ul>
+      <% for(var i=0; i<comments.length; i++) {%>
+        <li class="col-6 justify-content-between mt-5">
+          <!--Add user attribution-->
+          <span><strong>Stylist <%= comments[i].createdBy%>:</strong> <%= comments[i].comment%> <br><strong><%= comments[i].createdAt.toDateString() %></strong>
+          <!--If comment was created by current user, then show delete button-->
+          <!-- <br> <%if(comments[i].createdById == user.id){ %>
+                <form
+                  action="/comment/deleteComment/<%=post._id%>/<%= comments[i]._id %>?_method=DELETE"
+                  method="POST"
+                  >
+                  <button type="submit" class="btn btn-error">Delete this Formula</button>
+                </form>
+                <%}%> -->
+        </li>
+      <% } %>
+    </ul>
+
     <div class="col-3 mt-5">
       <h2 class="badge badge-outline">Spark Notes</h2>
       <br>
