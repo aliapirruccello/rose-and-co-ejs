@@ -1,6 +1,14 @@
 # Full Stack App to store Client Informatin
 ## This is an app that I was inspired to build for my hair styling needs 
 
+# Video Preview of App
+
+![rose-gif](https://user-images.githubusercontent.com/98843063/209581583-24e95c2a-4e99-41b4-af2d-3f1db4eeb56a.gif)
+
+# Link to Live Site
+
+https://roseandco.cyclic.app/
+
 Here is a link to the website: [(https://roseandco.cyclic.app/)]
 
 # Tech used
