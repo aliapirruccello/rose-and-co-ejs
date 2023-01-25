@@ -1,7 +1,3 @@
-/* @import url(fontawesome-all.min.css);
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400'; */
-
-
 body { 
     background-color:rgb(232, 213, 205);
     min-height: 100%;
@@ -19,16 +15,12 @@ body {
     background-size: cover; 
     height:630px; 
     padding-bottom: 50px;
-
 }
 
 #signup {
     background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1668522844/hair-salon-design-ideas_oygvdj.webp');
     background-size:cover; 
     height:630px;
-    /* background-size: 1500px; */
-   
-
 }
 
 h1 {   
@@ -116,7 +108,6 @@ h1 {
  }
 
 #logout {
-   
     margin-bottom: 50px;
     padding-bottom: 120px;
     margin-top: 40px;
@@ -124,7 +115,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+}
+
+.add-new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feedtop {
@@ -157,14 +153,9 @@ h1 {
 
 
 .main-class {
-    /* background-color: rgb(214, 187, 171); */
-    /* min-height: calc(100vh - 50px); */
     text-align: center;
-    /* margin-top: 90px; */
     padding-top:100px;
     margin-bottom: 150px;
-
-   
 }
 
 .new-client-main {
@@ -223,8 +214,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-   
-
 }
 
 .my-clients-login {
@@ -233,7 +222,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .bottom-login {
@@ -248,7 +236,6 @@ img {
     background-color:rgb(221, 191, 176);
     height:650px;
     margin-top: -250px;
-
 }
 
 .my-clients-signup {
@@ -266,13 +253,12 @@ img {
 
 
 .header {
-    /* position: fixed; */
+    
     left: 0;
     top: 0;
     width: 100%;
     z-index: 999;
     background-color: rgb(239, 223, 216);
-    /* opacity: .5; */
     padding: 10 0 0 60px;
     display: flex;
     align-items: center;
@@ -281,13 +267,11 @@ img {
 }
 
 .header-signin {
-    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
     z-index: 999;
     background-color: transparent;
-    /* opacity: .5; */
     padding: 10 0 0 60px;
     display: flex;
     align-items: center;
@@ -299,9 +283,7 @@ img {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* width: 100%; */
     background-color: rgb(42, 19, 51);
-    /* margin-bottom: 60px;  */
     clear: both;
     position: relative;
     height: 60px;
@@ -319,6 +301,205 @@ img {
 .signin-btn {
     margin: 30px 30px 30px 0px;
 }
+
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 0 0 2px rgb(41,19,51);
+    color: rgb(41,19,51);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    height: 3.125em;
+    letter-spacing: 0.225em;
+    line-height: 3.125em;
+    max-width: 30em;
+    padding: 0 2.75em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.button-signin {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 0 0 2px rgb(41,19,51);
+    color: rgb(41,19,51);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    height: 2.2em;
+    letter-spacing: 0.1em;
+    line-height: 2.2em;
+    max-width: 30em;
+    padding: 0 1em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.button-add-new {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    height: 3.2em;
+    letter-spacing: 0.1em;
+    line-height: 3.2em;
+    max-width: 30em;
+    padding: 0 2em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+}
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    button:hover,
+    .button:hover {
+        background-color: rgba(144, 144, 144, 0.25);
+    }
+
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input[type="button"]:active,
+    button:active,
+    .button:active {
+        background-color: rgba(144, 144, 144, 0.5);
+    }
+
+    input[type="submit"].icon:before,
+    input[type="reset"].icon:before,
+    input[type="button"].icon:before,
+    button.icon:before,
+    .button.icon:before {
+        margin-right: 0.5em;
+    }
+
+    input[type="submit"].fit,
+    input[type="reset"].fit,
+    input[type="button"].fit,
+    button.fit,
+    .button.fit {
+        width: 100%;
+    }
+
+    input[type="submit"].small,
+    input[type="reset"].small,
+    input[type="button"].small,
+    button.small,
+    .button.small {
+        font-size: 0.8em;
+    }
+
+    input[type="submit"].large,
+    input[type="reset"].large,
+    input[type="button"].large,
+    button.large,
+    .button.large {
+        font-size: 1.35em;
+    }
+
+    input[type="submit"].primary,
+    input[type="reset"].primary,
+    input[type="button"].primary,
+    button.primary,
+    .button.primary {
+        background-color: rgb(41,19,51);
+        box-shadow: none !important;
+        color: #ffffff !important;
+    }
+
+        input[type="submit"].primary:hover,
+        input[type="reset"].primary:hover,
+        input[type="button"].primary:hover,
+        button.primary:hover,
+        .button.primary:hover {
+            background-color: rgb(87, 40, 102) !important;
+        }
+
+        input[type="submit"].primary:active,
+        input[type="reset"].primary:active,
+        input[type="button"].primary:active,
+        button.primary:active,
+        .button.primary:active {
+            background-color: #9580e7 !important;
+        }
+
+    input[type="submit"].disabled, input[type="submit"]:disabled,
+    input[type="reset"].disabled,
+    input[type="reset"]:disabled,
+    input[type="button"].disabled,
+    input[type="button"]:disabled,
+    button.disabled,
+    button:disabled,
+    .button.disabled,
+    .button:disabled {
+        pointer-events: none;
+        opacity: 0.25;
+    }
+
+    @media screen and (max-width: 736px) {
+
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        button,
+        .button {
+            height: 3.75em;
+            line-height: 3.75em;
+        }
+
+    }
+
 
 /* Icon */
 
