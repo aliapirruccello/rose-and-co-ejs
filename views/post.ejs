@@ -33,15 +33,6 @@
         <li class="col-6 justify-content-between mt-5">
           <!--Add user attribution-->
           <span><strong>Stylist <%= comments[i].createdBy%>:</strong> <%= comments[i].comment%> <br><strong><%= comments[i].createdAt.toDateString() %></strong>
-          <!--If comment was created by current user, then show delete button-->
-          <!-- <br> <%if(comments[i].createdById == user.id){ %>
-                <form
-                  action="/comment/deleteComment/<%=post._id%>/<%= comments[i]._id %>?_method=DELETE"
-                  method="POST"
-                  >
-                  <button type="submit" class="btn btn-error">Delete this Formula</button>
-                </form>
-                <%}%> -->
         </li>
       <% } %>
     </ul>
@@ -66,15 +57,6 @@
         
         <%}%>
         </div>
-    <!-- </div>
-    <div class="card-actions justify-end"> -->
-    <!-- <form
-          action="/post/deletePost/<%= post.id %>?_method=DELETE"
-          method="POST"
-          class="col-3"
-        >
-          <button class="btn btn-primary fa fa-trash" type="submit"></button>
-        </form> -->
 
         <%if(post.user == user.id){ %>
           <form
@@ -99,26 +81,11 @@
             <input type="text" class="form-control input input-bordered input-primary w-full max-w-xs" id="comment" name="comment" placeholder="Add New Formula Here">
         </div>
       </div>
-    
         
         <button type="submit" class="btn btn-primary submit">Submit</button>
       </form>
     </div>
-    
-    <!-- <ul>
-      <h1>Updated Formulas</h1>
-      <% for(var i=0; i<comments.length; i++) {%>
-        <li class="col-6 justify-content-between mt-5">
-          <%= comments[i].comment%>
-        </li>
-      <% } %>
-    </ul> -->
-    <!-- <div class="col-6 mt-5">
-      <a class="btn btn-primary" href="/profile">Return to Profile</a>
-      <a class="btn btn-primary" href="/feed">Return to Feed</a>
-    </div> -->
   
-
   </div>
 </div>
 </div>
