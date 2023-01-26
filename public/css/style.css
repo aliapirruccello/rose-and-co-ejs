@@ -10,9 +10,17 @@ body {
     padding-bottom: 60px;
 }
 
+.main-class {
+    text-align: center;
+    padding-top:100px;
+    margin-bottom: 150px;
+}
+
 #login {
     background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1668522844/hair-salon-design-ideas_oygvdj.webp');
-    background-size: cover; 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll; 
     height:630px; 
     padding-bottom: 50px;
     overflow: scroll;
@@ -21,6 +29,8 @@ body {
 #signup {
     background-image: url('https://res.cloudinary.com/aliapurplejello/image/upload/v1668522844/hair-salon-design-ideas_oygvdj.webp');
     background-size:cover; 
+    background-position: center center;
+    background-attachment: scroll; 
     height:630px;
 }
 
@@ -144,13 +154,6 @@ h1 {
     margin-bottom: 20px;
     text-align:inherit;
 
-}
-
-
-.main-class {
-    text-align: center;
-    padding-top:100px;
-    margin-bottom: 150px;
 }
 
 .new-client-main {
@@ -312,7 +315,7 @@ button,
     -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    background-color: transparent;
+    background-color: white;
     border-radius: 3px;
     border: 0;
     box-shadow: inset 0 0 0 2px rgb(41,19,51);
