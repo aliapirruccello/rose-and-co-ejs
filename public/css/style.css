@@ -109,14 +109,14 @@ h1 {
 
 
  .shadow-xl-client-card {
-    max-height: 540px;
-    min-height: 540px;
+    max-height: 455px;
+    min-height: 455px;
     margin: 10px;
  }
 
  .client-image {
-    max-height: 360px;
-    min-height: 360px;
+    max-height: 30px;
+    min-height: 300px;
  }
 
 
