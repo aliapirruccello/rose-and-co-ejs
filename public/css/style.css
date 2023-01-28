@@ -12,7 +12,7 @@ body {
 
 .main-class {
     text-align: center;
-    padding-top:100px;
+    padding-top:105px;
     margin-bottom: 150px;
 }
 
@@ -34,14 +34,17 @@ body {
     height:630px;
 }
 
+.input-primary {
+    border: 1px solid;
+}
+
 h1 {   
     font-size: xx-large;
 }
 
 .main-track-headline {
     text-align: center;
-    padding: 4.5em 3em 3em 3em;
-    margin-top: -4em;
+    padding: 0 3em 3em 3em;
     background-color: rgb(250, 247, 245);
 }
 
@@ -55,7 +58,6 @@ h1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-   
  }
 
  .app-card {
@@ -88,23 +90,33 @@ h1 {
     margin-top: 30px;
     padding-top:15px;
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     background-color:rgb(252, 251, 249);
+    text-align: center;
  }
 
  .sign-up-card {
     margin-top: 30px;
     padding-top:15px;
     padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 30px;
     background-color:rgb(252, 251, 249);
+    justify-content: center;
+    text-align: center;
  }
 
 
  .shadow-xl-client-card {
-    max-height: 460px;
-    min-height: 460px;
-    margin: 20px;
+    max-height: 540px;
+    min-height: 540px;
+    margin: 10px;
+ }
+
+ .client-image {
+    max-height: 360px;
+    min-height: 360px;
  }
 
 
@@ -302,6 +314,11 @@ img {
 
 /* Button */
 
+.intro-buttons {
+    display: inline-block;
+    width: 220px;
+}
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -355,11 +372,11 @@ button,
     display: inline-block;
     font-size: .7em;
     font-weight: 400;
-    height: 1.6em;
+    height: 1.8em;
     letter-spacing: 0.1em;
-    line-height: 1.6em;
+    line-height: 1.8em;
     max-width: 30em;
-    padding: 0 1em;
+    padding: 0 .7em;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
@@ -390,6 +407,7 @@ button,
     line-height: 3.2em;
     max-width: 30em;
     padding: 0 2em;
+    margin-bottom: 20px;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
@@ -832,7 +850,8 @@ ul#horizontal-list li {
         -ms-order: 1;
         order: 1;
         border-radius: 0;
-        width: 40%;
+        width: 50%;
+        padding: 3em;
     }
 
         .spotlight .image img {
@@ -871,7 +890,7 @@ ul#horizontal-list li {
     }
 
     .spotlight:nth-child(2) {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(252, 251, 249);
     }
 
     .spotlight:nth-child(3) {
@@ -879,7 +898,7 @@ ul#horizontal-list li {
     }
 
     .spotlight:nth-child(4) {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(252, 251, 249);
     }
 
     .spotlight:nth-child(5) {
@@ -1303,7 +1322,7 @@ ul#horizontal-list li {
         }
 
     .wrapper.style4 {
-        background-color: rgb(252, 251, 249);
+        background-color: rgb(250, 247, 245);
         /* background-image: url("https://res.cloudinary.com/aliapurplejello/image/upload/v1671126496/banner_idosoo.jpg");
         background-size: cover; */
     }
@@ -1684,7 +1703,7 @@ ul#horizontal-list li {
 			-ms-order: 1;
 			order: 1;
 			padding-right: 4em;
-			width: 70%;
+			width: 50%;
 		}
 
 			#cta .inner header p {
@@ -1696,7 +1715,7 @@ ul#horizontal-list li {
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			width: 40%;
+			width: 30%;
 		}
 
 		@media screen and (max-width: 980px) {
