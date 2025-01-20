@@ -1,51 +1,57 @@
-<%- include('partials/header') -%>
-<div class="main-class">
-<div class="artboard phone-1">
-  <div class="login"> Login to your account</div>
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Rose+Co</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
 
-<main class="container">
-  <div class="row justify-content-center">
-    <section class="col-6 mt-5">
-      <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
-      <div class="alert alert-danger"><%= el.msg %></div>
-      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
-      messages.info.forEach( el => { %>
-      <div class="alert alert-info"><%= el.msg %></div>
-      <% }) %> <% } %>
-      <form action="/login" method="POST">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          
-          <input
-            type="email"
-            class="input input-bordered input-lg w-full max-w-xs"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            name="email"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            type="password"
-            class="input input-bordered input-lg w-full max-w-xs"
-            id="exampleInputPassword1"
-            name="password"
-          />
-        </div>
-        <button type="submit" class="btn btn-outline btn-primary">Submit</button>
-      </form>
-    </section>
-  </div>
-</div>
-</div>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+
+                <h2>Sign In to Your Account</h2>
+
+                 <section class="log-in-card">
+                   <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+                 <div><%= el.msg %></div>
+                    <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+                    messages.info.forEach( el => { %>
+                  <div><%= el.msg %></div>
+                  <% }) %> <% } %>
+
+                  <form action="/login" method="POST">
+                   <div>
+                 <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label>
+                  <input
+                  type="email"
+                  aria-describedby="emailHelp"
+                  name="email"/>
+                  </div>
+                  <br />
+                  <div>
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input
+                      type="password"
+                      name="password"/>
+                    </div>
+                    <br />
+                  <button type="submit">Submit</button>
+                </form>
+              </section>
+ 
+            </div>
   
-</main>
+    </section>
 
-<footer class="footer footer-center p-4 text-base-content">
-  <div>
-    <p>Copyright © 2022 - Alia Pirruccello</p>
-  </div>
-</footer>
+
+
+
+<%- include('partials/footer') -%>
